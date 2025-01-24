@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     body{
+  font-family:"Raleway", Helvetica, sans-serif;
+  margin: 0%;
+}
+
+#main {
+    display:flex;
+    flex-direction: row;
+ justify-content: space-evenly;
+  padding-left: 30px;
+  height: 60px;
+  position: sticky;
+  top: 0px;
+  background-color: aliceblue;
+}
+h3{
+   letter-spacing: 5px;
+}
+nav ul {
+display:flex;
+  flex-direction: row;
+}
+h3{
+    display: inline-block;
+}
+nav ul li{
+   display: flex;
+   justify-content: center;
+    padding: 8px;
+}
+ a{
+  text-decoration:none;
+  font-size:20px;
+  color: black;
+  padding-left: 20px;
+}
+a:hover{
+    color: red;
+}
+button{
+  border: none;
+    margin: 2px;
+    padding: 2px;
+}
+button:hover{
+    box-shadow: 2px 2px 10px rgb(36, 35, 35);
+    transition: 1s;
+}
+#hero{
+    background-image: url('https://www.shutterstock.com/image-photo/happy-cute-latin-teenage-student-260nw-2438190507.jpg');
+    height: 600px;
+    background-size: cover;
+}
+#head{
+    padding: 160px; 
+    padding-top: 200px;
+}
+#head p {
+    padding-left: 60px;
+    font-family: "Brush Script MT", cursive;
+    font-size: 30px;
+}
+#head button{
+    margin-left:100px ;
+    background-color: rgb(66, 63, 63);
+    color: aliceblue;
+    padding: 8px;
+}
+#pitcher{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+ }
+ #pitcher img{
+    margin: 5px;
+ }
+
+h2{
+    text-align: center;
+    padding: 30px;
+}
+
+#pic1 img:hover{
+    box-shadow: 2px 2px 10px rgb(70, 69, 69);
+    transition: 1s;
+}
+#pic2{
+    display: flex;
+    flex-direction: column;
+}
+
+#pic2 img:hover{
+    box-shadow: 2px 2px 10px rgb(70, 69, 69);
+    transition: 1s;
+}
+#pic3{
+    display: flex;
+    flex-direction: column;
+}
+
+#pic3 img:hover{
+    box-shadow: 2px 2px 10px rgb(70, 69, 69);
+    transition: 1s;
+}
+
+#pic4 img:hover{
+    box-shadow: 2px 2px 10px rgb(70, 69, 69);
+    transition: 1s; 
+    margin-bottom: 20px;
+}
+#num{
+    display: flex;
+    flex-direction: row;
+  justify-content: space-evenly;
+    margin-top: 70px;
+ 
+
+}
+#num div{
+    background-color: gainsboro;
+    height: 120px;
+    width: 150px;
+    text-align: center;
+    padding-top: 20px;
+    border-radius: 10px;
+}
+#num div:hover{
+    box-shadow: 2px 2px 10px rgb(70, 69, 69);
+    transition: 1s; 
+}
+#sale{
+    text-align: center;
+}
+ #sale button{
+background-color: rgb(110, 108, 108);
+color: aliceblue;
+padding: 9px;
+}
+#sale button:hover{
+    background-color: black;
+}
+#div4{
+display: flex;
+flex-direction: row;
+margin-top: 40px;
+text-align: center;
+margin-left: 250px;
+
+}
+#dt{
+    margin: 20px;
+    width: 200px;
+    height: 400px;
+}
+button{
+    background-color:rgb(5, 75, 5);
+    color: antiquewhite;
+    width: 120px;
+    padding: 5px;
+}
+#ff{
+    margin: 20px;
+    width: 200px;
+    height: 400px;
+}
+#qp{
+    margin: 20px;
+    width: 200px;
+    height: 400px;
+}
+#sk{
+    margin: 20px;
+    width: 200px;
+    height: 400px;
+}
+#logo{
+    display: flex;
+    flex-direction: row;
+  
+}
+#logo img{
+    filter: grayscale(100%);
+}
+#pic{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#pic img{
+    margin: 5px;
+}
+#ic p{
+    display: flex;
+    justify-content: end;
+    font-family: "Brush Script MT", cursive;
+    font-size: 30px;
+    margin-right: 20px;
+ color: rgb(138, 135, 135);
+}
+#nl{
+    text-align: center;
+    background-color: rgb(199, 197, 197);
+    height: 250px;
+    width: 1100px;
+    margin-left: 110px;
+}
+input{
+    width: 300px;
+    padding: 5px; 
+}
+#df{
+    padding: 100px;
+    padding-left: 120px;
+    display: flex;
+    flex-direction: row;
+}
+#h{
+    letter-spacing: 5px;
+}
+#hh h5{
+   margin-left: 100px;
+   display: flex;
+   margin-top: 0%;
+   justify-content: flex-start;
+
+   
+}
+
+#df p{
+    margin-top: 20px;
+}
+#footer {
+    display:flex;
+    flex-direction: row;
+ justify-content: space-evenly;
+  padding-left: 30px;
+  height: 60px;
+  background-color: rgb(109, 110, 110);
+  color: aliceblue;
+}
+
+nav ul {
+display:flex;
+  flex-direction: row;
+}
+#footer h3{
+    display: inline-block;
+    letter-spacing: 0px;
+}
+nav ul li{
+   display: flex;
+   justify-content: center;
+    padding: 8px;
+}
+#footer  a{
+  text-decoration:none;
+  font-size:20px;
+  color: rgb(240, 237, 237);
+  padding-left: 20px;
+}
+a:hover{
+    color: red;
+}
+
+
+
+  
+  
+
+
+
+    </style>
+</head>
+<body>
+    <!--nav section-->
+    <div id="main">
+        <h3>DREAM FASHION</h3>
+        <nav>
+            <ul>
+                <li><a href="#Home ">Home</a></li>
+                <li><a href="#Shop">Shop</a></li>
+                <li><a href="#Faq">Faq</a></li>
+                <li><a href="#Blogs">Blogs</a></li>   
+                <li><a href="#Content">Contact</a></li>   
+            </ul>
+        </nav>
+        <button>Log in</button>
+    </div>
+
+    <div id="hero">
+        <div id="head">
+        <h1>FASHION ARE UNIQUE </h1>
+        <p>Treading winter collection</p>
+        <button>EXPLORE MORE</button>
+    </div>
+    </div>
+    <div id="cata">
+        <h2>Categories</h2>
+        <div id="pitcher">
+        <div id="pic1">
+            <img src="https://img.freepik.com/free-photo/full-length-pleased-brunette-woman-with-arm-pocket-showing-thumb-up-looking-camera-gray_171337-970.jpg"width="200px"height="410px">
+        </div>
+
+        <div id="pic2">
+            <img src="https://cdn.pixabay.com/photo/2022/04/06/11/30/girl-7115394_640.jpg"width="200px"height="200px">
+            <img src="https://static.vecteezy.com/system/resources/previews/026/829/465/non_2x/beautiful-girl-with-autumn-leaves-photo.jpg"width="200px"height="200px">
+        </div>
+        <div id="pic3">
+            <img src="https://img.freepik.com/premium-photo/young-female-teacher-stand-near-whiteboard-explain-english-language-rules-grammar-study_359031-39623.jpg"width="200px"height="200px">
+            <img src="https://images.pexels.com/photos/341970/pexels-photo-341970.jpeg?cs=srgb&dl=pexels-raydar-110719-341970.jpg&fm=jpg"width="200px"height="200px">
+        </div>
+        <div id="pic4">
+            <img src="https://img.freepik.com/premium-photo/young-caucasian-businesswoman-with-clipboard-posign-office_359031-39383.jpg"width="200px"height="410px">
+        </div>
+        </div>
+    </div>
+    <div id="num">
+    <div id="1">
+       &#xf658;
+        <h5>product</h5>
+        <p>757</p>
+    </div>
+    <div id="2">
+        &#xf0c0;	
+
+        <h5>Followers</h5>
+        <p>222</p>
+    </div>
+    <div id="3">
+        &#xf651;
+        <h5>Monthly sales</h5>
+        <p>646</p>
+    </div>
+    <div id="4">
+        &#xf406;
+        <h5>Happy Customers</h5>
+        <p>98%</p>
+    </div>
+    </div>
+
+    <div id="sale">
+        <h2>Best Sellers</h2>
+        <p>It was populerised in the 1960s with the release of letraset sheets <br> containing Lorem Ipsum passages.</p>
+        <button>All</button>
+        <button>New arrivels</button>
+        <button>stylish Products</button>
+        <button>Womens</button>
+    </div>
+
+    <div id="div4">
+    <div id="dt">
+        <img src="https://essentia.com.pk/cdn/shop/files/DSC_5163_07e3c8ad-6d2c-44c3-98d1-184dbc13dc5e.jpg?v=1724085039"width="200px"height="200px">
+        <h6>DOTTED TOP</h6>
+        <p>Rs.69,00 </p>
+        <button>Shop now</button>
+    </div>
+
+    <div id="qp">
+        <img src="https://sophiasgallery.com/cdn/shop/products/image_8d852315-16de-4f65-8f45-6d1b975ff0e5_2048x.heic?v=1707842649"width="200px"height="200px">
+        <h6>QUIPO DRESS</h6>
+        <p>Rs.2,400,00</p>
+        <button>Shop now</button>
+    </div>
+
+    <div id="sk">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWmjuEMOi5qjvDT1pFLyqhTb3O5tV25mHgGA&s"width="200px"height="200px">
+        <h6>SILky FROk</h6>
+        <p>Rs.2,400,00</p>
+        <button>Shop now</button>
+    </div>
+
+    <div id="ff">
+        <img src="https://alikids-store.pk/wp-content/uploads/2019/06/fancy-kids-dresses-online-party-wear-long-frocks-online-pakistan-ali-kids-store.jpg"width="200px"height="200px">
+        <h6>FANCY FROK</h6>
+        <p>3,500,00</p>
+        <button>Shop now</button>
+    </div>
+
+    </div>
+
+    <div id="div4">
+        <div id="dt">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.Feh33Ar7hSZcyDMcwtS95QHaLH&pid=Api&P=0&h=220"width="200px"height="200px">
+            <h6>LACE DRESS</h6>
+            <p>Rs.264,000 </p>
+            <button>Shop now</button>
+        </div>
+    
+        <div id="qp">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrvKpfhncI1O85UhVsYBE4UXJTNngpZ-2dXw&s"width="200px"height="200px">
+            <h6>DOTTED FROK</h6>
+            <p>Rs.1,500,00</p>
+            <button>Shop now</button>
+        </div>
+    
+        <div id="sk">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2CCZWWBpusH6jqVUJrfaxipTKAi5HJRcitg&s"width="200px"height="200px">
+            <h6>KFTEN DRESS</h6>
+            <p>Rs.1,630,00</p>
+            <button>Shop now</button>
+        </div>
+    
+        <div id="ff">
+            <img src="https://img.drz.lazcdn.com/static/pk/p/de227658942cf2a1150220a6bb6abeb5.jpg_960x960q80.jpg_.webp"width="200px"height="200px">
+            <h6>FLARE DRESS</h6>
+            <p>3,500,00</p>
+            <button>Shop now</button>
+        </div>
+        </div>
+        <div id="logo">
+            <img src="https://marketplace.canva.com/EAFgKTLYN00/1/0/1600w/canva-minimalist-geometric-interior-design-company-logo-tepX_21nWJs.jpg"width="269px"height="200px">
+            <img src="https://www.shutterstock.com/image-vector/abstract-initial-letter-n-logo-260nw-1730638102.jpg"width="269px"height="200px">
+            <img src="https://images-platform.99static.com//ty1x2W7Pr6N1NV9y3KtVkjyaPew=/156x156:798x798/fit-in/500x500/99designs-contests-attachments/98/98772/attachment_98772858"width="269px"height="200px">
+            <img src="https://images-platform.99static.com//S8MlF4q8zntUfXXo8EfUmjvPvBU=/122x3:866x747/fit-in/500x500/99designs-contests-attachments/82/82432/attachment_82432191"width="269px"height="200px">
+            <img src="https://images-platform.99static.com//rNdf9Xz51w5x2P39qKEC1qFRlXw=/203x205:1393x1395/fit-in/500x500/99designs-contests-attachments/60/60265/attachment_60265219"width="269px"height="200px">
+        </div>
+
+        <div id="ic">
+            <h2>Instagram Community</h2>
+            <div id="pic">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5RGi8XohQDASYbFjD1iVug9CG57UcDKTgeg&s"width="200px"height="200px">
+                <img src="https://media.istockphoto.com/id/1124672818/photo/teenager-boy-laughing.jpg?s=612x612&w=0&k=20&c=ld5k9elRodiHIQeJPiKutTd5vW9c-TeZFieTa36TRUU="width="200px"height="200px">
+                <img src="https://c8.alamy.com/comp/HWXMCT/young-stylish-brunette-girl-on-shirt-pants-jeans-jacket-and-high-heels-HWXMCT.jpg"width="200px"height="200px">
+                <img src="https://media.istockphoto.com/id/1153707486/photo/sad-teenager-standing-outside-of-a-school.jpg?s=612x612&w=0&k=20&c=8eOdbYd5qhQT_aFueDxkdirdehK05DB0oJz7MryjSns="width="200px"height="200px">
+                <img src="https://thumbs.dreamstime.com/b/fashion-photo-young-beautiful-female-model-dress-business-woman-pants-shirt-brick-wall-background-office-style-studio-144081442.jpg"width="200px"height="200px">
+            </div>
+               <p>Check our instagram...</p>
+        </div>
+
+        <div id="nl">
+            <h2>Newsletter</h2>
+            <p>Adipiscing commodo elit at imperdiet dui accumsan sit arnet nulla.<br>
+            Platea dictumset vestibulum rhoncus pellentesque.</p>
+            <label for="email"></label>
+            <input type="email"name="email"placeholder=" YOUR EMAIL ADDRESS ">
+            <button>Join US</button>
+            <p>never miss out on new arrivels or specials launches.</p>
+        </div>
+
+        <div id="df">
+            <h4 id="h">DREAM FASHION</h4>
+
+            <div id="hh">
+            <h5>Support<br></h5>
+            </div>
+
+            <p>to order <br>Delivery into<br>Repair of life<br>Get warp</p>
+            <div id="hh">
+            <h5>About US</h5></div>
+            <p>The textile industry has also given rise to many Pakistani fashion brands. </p>
+        </div>
+
+
+       
+            <div id="footer">
+                <h3>©2024 boom fashion-demo Design Theme</h3>
+                <nav>
+                    <ul>
+                        <li><a href="#content ">content</a></li>
+                        <li><a href="#T&C">T&C</a></li>
+                        <li><a href="#Faq">Faq</a></li>
+                        <li><a href="#Private Policy">Private Policy</a></li>   
+                        <li><a href="#Delivers">Delivers</a></li>   
+                    </ul>
+                </nav>
+                
+            </div>
+        
+</body>
+</html>

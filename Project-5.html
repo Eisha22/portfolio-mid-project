@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0px;
+        }
+        nav{
+            background-color:rgb(43, 141, 187);
+            position: sticky;
+            top: 0px;
+        }
+        nav img{
+            padding-left: 90px;
+        }
+        #hero{
+            display: flex;
+            flex-direction: row;
+        }
+       
+        #img1{
+          position: absolute;
+            top: 130px;
+            left: 1000px;
+            z-index: 3;
+            transform: rotate(8deg);
+            border: 8px solid rgb(194, 174, 174);
+        }
+        #img1:hover{
+            transition: 1s;
+            transform: rotate(1deg);
+        }
+        #img2{
+           position: absolute;
+            top:100px;
+            left: 900px;
+            z-index: 2;
+            transform: rotate(10deg);
+            border: 8px solid rgb(163, 136, 136);
+        }
+        #img2:hover{
+            transition: 1s;
+            transform: rotate(1deg);
+        }
+        #img3{
+           position: absolute;
+            top: 120px;
+            left: 800px;
+            z-index: 1;
+            transform: rotate(6deg);
+            border: 8px solid rgb(155, 122, 122);
+        } 
+        #img3:hover{
+            transition: 1s;
+            transform: rotate(1deg);
+        }
+        #img4{
+           position: absolute;
+            top: 170px;
+            left: 650px;
+            z-index: 4;
+            transform: skew(8deg); 
+            border: 8px solid rgb(155, 128, 128);
+        }
+        #img4:hover{
+            transition: 1s;
+            transform: rotate(1deg);
+        }
+        #head{
+            padding-left: 70px;
+        }
+        #hero{
+        background-color: rgb(247, 246, 246);
+        height: 350px;
+        }
+       #head h3{
+            color: rgb(31, 128, 255);
+            display: inline-block;
+            font-size: 25px;
+            padding-left: 2px;
+            margin: 10px;
+        }
+       #head h1{
+            color: rgb(64, 64, 252);
+        }
+        #head h2{
+            color: rgb(64, 64, 252);
+        }
+        #head p{
+            display: flex;
+            flex-direction: row;
+            color: rgb(86, 86, 235);
+            display: inline-block;
+         
+        }
+        ul li{
+            color: rgb(61, 61, 219); 
+        }
+        #para{
+            background-color: rgb(252, 247, 246);
+            margin-top: 0%;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            color: rgb(51, 51, 233);
+            border: 2px solid black;
+            width: 1000px;
+            padding-top: 15px;
+            padding-left: 0px;
+            margin-left: 190px;
+          
+        
+        }
+        button{
+            height: 25px;
+            padding-left: 10px;
+            background-color: rgb(250, 38, 38);
+            color: aliceblue;
+            border: none;
+            margin-left: 20px;
+            margin-top: 8px;
+            border: none;
+        }
+        button:hover{
+            transition: 1s;
+            box-shadow: 2px 2px 10px black;
+        }
+        #video{
+            padding-left: 150px;
+            padding-top: 50px;
+            display: flex;
+            flex-direction: row;
+            margin-top: 80px;
+        }
+      #mess{
+        display: flex;
+        flex-direction: column;
+      
+      }
+      #form{
+        background-color: rgb(130, 130, 252);
+        margin: 20px;
+        padding: 50px;
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        margin-left: 100px;
+      }
+      #form h3{
+        text-align: center;
+        margin-bottom: 50px;
+      }
+      #content{
+        color: aliceblue;
+        font-size: 30px;
+      }
+      
+     
+      input{
+        width: 250px;
+        padding: 5px;
+      }
+      textarea{
+        width: 250px;
+        padding: 5px;
+      }
+      #pm{
+        background-color: rgb(170, 154, 148);
+      }
+      #pm p{
+        padding-left: 20px;
+      }
+      #mess h4{
+        color: rgb(54, 54, 255);
+      }
+      #pic1 img{
+        width: 100px;
+        height: 100px;
+      border-radius: 50px ;
+       
+      }
+      #pic{
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+        justify-content: center;
+        background-color: rgb(252, 195, 175);
+      }
+      #pic1 p{
+        text-align: center;
+      }
+      
+      #pic1{
+        text-align: center;
+        padding-top: 20px;
+      }
+      #but{
+       background-color: rgb(66, 66, 247);
+       height: 90px;
+       margin-top:0px ;
+       margin-bottom: 0%;
+      }
+      #info{
+        margin-top: 20px;
+        color:  rgb(66, 66, 247);
+        display: flex;
+        justify-content: center;
+        border: 2px solid  rgb(66, 66, 247);
+        height: 90px;
+        box-shadow: 2px 2px 10px black;
+ 
+      }
+      #info p{
+    margin-top: 0%;
+      }
+      #fb img{
+        width: 200px;
+        height: 200px;
+      }
+      #loc img{
+        width: 200px;
+        height: 200px;
+      }
+      #link{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-top: 30px;
+        background-color: rgb(77, 77, 247);
+        margin-top: 30px;
+        color: aliceblue;
+      }
+      #link h5{
+        text-align:center;
+        color: aliceblue;
+
+      }
+      #link img{
+        padding-bottom: 20px;
+      }
+     
+      footer{
+        
+      
+        text-align: right;
+        letter-spacing: 20px;
+        background-color: rgb(37, 36, 36);
+        color: aliceblue;
+        padding: 10px;
+        padding-right: 200px;
+      }
+       
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="https://www.parnell.net.nz/wp-content/uploads/2020/06/acg_logo-parnell-450x450-1.jpg"width="60"height="60px">
+    </nav>
+    <div id="hero">
+
+    <div id="head">
+        <h2>Experience a new</h2>
+        <h1>IB Colloge</h1>
+        <p>with a</p>
+        <h3>different</h3>
+        <ul>
+            <li>Converiently located in the heart of city</li>
+            <li>Unique years 11to 13 specialist pre-university center</li>
+            <li>A choice of Cambridge IGCSE/A Level or the IB Diploma Qulification</li>
+        </ul>
+    </div>
+    
+    <div id="img1">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQau-mOx2GVO_ycLAaNn2ds439Aszz-06sqTA&s"width="200px"height="200px">
+    </div>
+    <div id="img2">
+    <img src="https://www.britannicaoverseas.com/uploads/university/acg-parnell-car2-jpg-1709200865.jpeg"width="200px"height="200px">
+    </div>
+    <div id="img3">
+    <img src="https://image.isu.pub/210315024427-32df325ebf95d4236228843551257a52/jpg/page_1_thumb_large.jpg"width="200px"height="200px">
+    </div>
+    <div id="img4">
+    <img src="https://image.isu.pub/210315024427-32df325ebf95d4236228843551257a52/jpg/page_1_thumb_large.jpg"width="200px"height="200px">
+    </div>
+    </div>
+    
+    <div id="para">
+       <p> Don't take our word for it.hear from hundreds of students who give us a 5 rating!</p>
+
+    <button>READ OUR REVIEWS</button>
+    </div>
+    
+
+    <div id="video">
+        <div id="mess">
+        <iframe width="300" height="200" src="https://www.youtube.com/embed/BqJ5-YoiLIU?si=3IOzlgKen7Dt_YMP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+            <h4>Principle message</h4>
+            <div id="pm">
+            <p> 6 Ways to Thank Your Principal for National Principals Month ...<br>
+                Thank you for being so thorough and dedicated <br>to your role as a school leader.
+                </p>   
+                </div>
+    
+        &#xf406;katify param,Principle 
+        </div>
+        <div id="form">
+        <form method="post">
+            <h3 id="content">Content US today!</h3>
+            <label for="uname"> </label>
+            <input type="uname"name="uname"id="name"placeholder="Name"reguired><p><br>
+
+                <label for="email"> </label>
+                <input type="email"name="email"id="name"placeholder="email"reguired><p><br>
+
+                    <label for="Phone"> </label>
+                    <input type="phone"name="phone"id="name"placeholder="phone"reguired><p><br>
+
+                        <label for="message"> </label>
+                        <textarea rows="3"column="2"placeholder="message"></textarea><br>
+                        <button>GIVE ME MORE INFO</button>
+        </form>
+        </div>
+    </div>
+
+
+    <div id="pic">
+        <div id="pic1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmMbWCIEF9MV96Fu8-nE90AqybVDkDOAbWqg&s">
+            <h5>Ib Programme</h5>
+            <p>The International Baccalaureate (IB) is a<br> program of challenging educational programs for students aged 3/19</p>
+        </div>
+
+        <div id="pic1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-Dp2XBfRr8vzzaifKcLWC8daduUFgIwDG5g&s">
+            <h5>Cambridge Qulification</h5>
+            <p>The International Baccalaureate (IB) is a <br>program of challenging educational programs for students aged 3/19</p>
+        </div>
+
+        <div id="pic1">
+            <img src="https://media.istockphoto.com/id/1346505451/photo/supporting-a-student.jpg?s=612x612&w=0&k=20&c=-fLDXTzoCrTIXk1Z4kBAe6tkzUjMTfUS5Sy7bHDhgnE=">
+            <h5>Passonate teacher</h5>
+            <p>The International Baccalaureate (IB) is a<br> program of challenging educational programs for students aged 3/19</p>
+        </div>
+
+        <div id="pic1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmMbWCIEF9MV96Fu8-nE90AqybVDkDOAbWqg&s">
+            <h5>In the heart of the city</h5>
+            <p>The International Baccalaureate (IB) is a <br>program of challenging educational programs for students aged 3/19</p>
+        </div>
+        </div>
+
+        <div id="info">
+            <p>Make the right choice!Unlock your potentiel with ACG Senior College
+            <button id="but">Get more info new<br>
+            fill out the form above</button></p>
+        </div>
+   
+        <div id="link">
+            <div id="fb">
+            <h5>FACEBOOK</h5>
+            <img src="https://store-images.s-microsoft.com/image/apps.37935.9007199266245907.b029bd80-381a-4869-854f-bac6f359c5c9.91f8693c-c75b-4050-a796-63e1314d18c9">
+        </div>
+        <div id="tw">
+            <h5>TWITTER</h5>
+            <p>From breaking news and entertainment to sports and politics,<br>
+                 get the full story with all the live commentary.
+                 <hr>
+                 officially known as X since July 2023, is a social networking service.</p>
+        </div>
+
+        <div id="Content">
+            <h5>CONTENT</h5>
+            <p>00000000<hr><br>
+            E:info@account.com<br><hr>
+            A:00 Lote street account 1010<br><hr>
+            W:www.acount.com</p>
+        </div>
+
+        <div id="loc">
+            <h5>LOCATION</h5>
+            <img src="https://media.istockphoto.com/id/1308342065/vector/folded-location-map-with-marker-city-map-with-pin-pointer-gps-navigation-map-with-city.jpg?s=612x612&w=0&k=20&c=E9DP4dIwSdwaveNwcYU2LzBeKuBoKLa7nsTxTWDHObw=">
+        </div>
+
+        </div>
+
+        <footer>
+             A    B    C    D
+        </footer>
+
+</body>
+</html>
